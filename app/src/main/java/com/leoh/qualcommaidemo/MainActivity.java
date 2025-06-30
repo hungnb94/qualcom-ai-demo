@@ -89,16 +89,16 @@ public class MainActivity extends AppCompatActivity {
         // UI Initialization
         //
         setContentView(R.layout.activity_main);
-        selectedImageView = (ImageView) findViewById(R.id.selectedImageView);
-        delegateSelectionGroup = (RadioGroup) findViewById(R.id.delegateSelectionGroup);
-        cpuOnlyButton = (RadioButton)findViewById(R.id.cpuOnlyRadio);
-        allDelegatesButton = (RadioButton)findViewById(R.id.defaultDelegateRadio);
+        selectedImageView = findViewById(R.id.selectedImageView);
+        delegateSelectionGroup = findViewById(R.id.delegateSelectionGroup);
+        cpuOnlyButton = findViewById(R.id.cpuOnlyRadio);
+        allDelegatesButton = findViewById(R.id.defaultDelegateRadio);
 
-        imageSelector = (Spinner) findViewById((R.id.imageSelector));
-        predictedClassesView = (TextView)findViewById(R.id.predictionResultText);
-        inferenceTimeView = (TextView)findViewById(R.id.inferenceTimeResultText);
-        predictionTimeView = (TextView)findViewById(R.id.predictionTimeResultText);
-        predictionButton = (Button)findViewById(R.id.runModelButton);
+        imageSelector = findViewById((R.id.imageSelector));
+        predictedClassesView = findViewById(R.id.predictionResultText);
+        inferenceTimeView = findViewById(R.id.inferenceTimeResultText);
+        predictionTimeView = findViewById(R.id.predictionTimeResultText);
+        predictionButton = findViewById(R.id.runModelButton);
 
         // Setup Image Selector Dropdown
         ArrayAdapter ad = new ArrayAdapter(this, android.R.layout.simple_spinner_item, imageSelectorOptions);
